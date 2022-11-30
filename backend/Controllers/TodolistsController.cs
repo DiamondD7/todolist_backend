@@ -46,7 +46,7 @@ namespace backend.Controllers
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutTodolist(int id, Todolist todolist)
-        {
+        { 
             if (id != todolist.TableId)
             {
                 return BadRequest();
@@ -70,7 +70,7 @@ namespace backend.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok();
         }
 
         // POST: api/Todolists
