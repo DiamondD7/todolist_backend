@@ -39,7 +39,7 @@ namespace backend.Migrations
 
                     b.HasKey("TableId");
 
-                    b.ToTable("Todolists");
+                    b.ToTable("Todolists", (string)null);
                 });
 #pragma warning restore 612, 618
         }
